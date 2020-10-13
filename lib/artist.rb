@@ -34,8 +34,8 @@ class Artist
   
   def print_songs
     song_instances = self.songs
-    song_instances.each_with_index do |song, index|
-      puts "#{index += 1} #{song.name}"
+    song_instances.each do |song|
+      puts song.name
     end
   end 
 
